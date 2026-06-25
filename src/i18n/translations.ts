@@ -1,0 +1,116 @@
+export type Locale = 'es' | 'en'
+
+export const translations = {
+  es: {
+    tagline: 'Análisis multi-estrategia · datos en vivo · digest de noticias',
+    apiOnline: 'API en línea',
+    apiOffline: 'API desconectada',
+    checking: 'Verificando…',
+    newChat: 'Nuevo chat',
+    conversations: 'Conversaciones',
+    conversationsHint: 'Compartidas · retoma cualquier hilo',
+    noConversations: 'Aún no hay conversaciones.',
+    noConversationsHint: 'Pulsa Nuevo chat o escribe abajo para empezar.',
+    messageCount: 'mensajes',
+    loading: 'Cargando…',
+    insights: 'Panel de datos',
+    insightsEmpty: 'Los gráficos y tablas aparecerán aquí cuando IGO consulte el mercado.',
+    panelData: 'Datos',
+    panelCharts: 'Gráficos',
+    chartsEmpty: 'No hay tickers para graficar todavía.',
+    chartsTickerHint: 'Selecciona un ticker para ver el gráfico de velas.',
+    openInTradingView: 'Abrir gráfico completo en TradingView',
+    welcomeTitle: 'Inkflow',
+    welcomeBody:
+      'Pregunta por cualquier ticker con lentes de momentum, tendencia, rango, breakout o pullback — con datos de Yahoo Finance y titulares reales.',
+    igoGreeting:
+      '¡Hola! Soy **IGO**, tu asistente de análisis bursátil. Puedo revisar tickers, escanear el mercado por estrategia y resumir noticias. ¿En qué te ayudo?',
+    suggestions: {
+      overview: '¿Qué se mueve hoy?',
+      overviewMsg:
+        'Dame un resumen claro del mercado hoy para alguien que no es experto. Sin jerga técnica.',
+      explain: '¿Qué pasa con AAPL?',
+      explainMsg:
+        'Explícame Apple en lenguaje sencillo: qué hace, cómo va el precio y qué debería saber un inversor casual.',
+      compare: 'Semiconductores: ¿NVDA o AMD?',
+      compareMsg:
+        'Compara NVDA y AMD de forma sencilla — cuál va mejor, qué cuenta la historia de cada una y cuál parece más sólida.',
+    },
+    composerPlaceholder: 'Pregunta por un ticker, estrategia o pide un digest de noticias…',
+    disclaimer: 'Solo análisis — no es asesoramiento financiero. Datos de Yahoo Finance.',
+    apiDown: 'API sin conexión — no se pudo conectar con el servidor.',
+    langEs: 'Español',
+    langEn: 'English',
+    marketScan: 'Escaneo de mercado',
+    tickersUniverse: 'tickers en universo',
+    snapshot: 'Snapshot',
+    news: 'Noticias',
+    vsMa20: 'vs MA20',
+    period: 'Período',
+    range: 'Rango',
+    strategies: {
+      momentum: 'Momentum',
+      trend: 'Tendencia',
+      breakout: 'Breakout',
+      pullback: 'Pullback',
+      range: 'Rango',
+    },
+  },
+  en: {
+    tagline: 'Multi-strategy analysis · live data · news digest',
+    apiOnline: 'API online',
+    apiOffline: 'API offline',
+    checking: 'Checking…',
+    newChat: 'New chat',
+    conversations: 'Conversations',
+    conversationsHint: 'Shared · resume any thread',
+    noConversations: 'No conversations yet.',
+    noConversationsHint: 'Hit New chat or type below to get started.',
+    messageCount: 'messages',
+    loading: 'Loading…',
+    insights: 'Data panel',
+    insightsEmpty: 'Charts and tables will appear here when IGO fetches market data.',
+    panelData: 'Data',
+    panelCharts: 'Charts',
+    chartsEmpty: 'No tickers to chart yet.',
+    chartsTickerHint: 'Select a ticker to view the candlestick chart.',
+    openInTradingView: 'Open full chart in TradingView',
+    welcomeTitle: 'Inkflow',
+    welcomeBody:
+      'Ask about any ticker through momentum, trend, range, breakout, or pullback lenses — grounded in live Yahoo Finance data and headlines.',
+    igoGreeting:
+      "Hi! I'm **IGO**, your equity research assistant. I can review tickers, scan the market by strategy, and summarize news. What can I help with?",
+    suggestions: {
+      overview: "What's moving today?",
+      overviewMsg:
+        "Give me a clear, beginner-friendly overview of what's interesting in the market today. Plain language, no jargon.",
+      explain: "What's the story with AAPL?",
+      explainMsg:
+        'Explain Apple in plain English — what it does, how the stock has been moving, and what a casual investor should know.',
+      compare: 'Chip stocks: NVDA or AMD?',
+      compareMsg:
+        "Compare NVDA and AMD in simple terms — who's done better, what's the story behind each, and which looks healthier.",
+    },
+    composerPlaceholder: 'Ask about a ticker, strategy setup, or request a news digest…',
+    disclaimer: 'Analysis only — not financial advice. Data from Yahoo Finance.',
+    apiDown: 'API offline — could not connect to the server.',
+    langEs: 'Español',
+    langEn: 'English',
+    marketScan: 'Market scan',
+    tickersUniverse: 'tickers universe',
+    snapshot: 'Snapshot',
+    news: 'News',
+    vsMa20: 'vs MA20',
+    period: 'Period',
+    range: 'Range',
+    strategies: {
+      momentum: 'Momentum',
+      trend: 'Trend',
+      breakout: 'Breakout',
+      pullback: 'Pullback',
+      range: 'Range',
+    },
+  },
+} as const
+
+export type TranslationKey = keyof (typeof translations)['es']
